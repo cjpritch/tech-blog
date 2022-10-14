@@ -1,0 +1,10 @@
+<article>
+  <div>
+  <p>{{title}}</p>
+  <p>{{post_text}}</p>
+</div>
+<div>
+  Created by {{user.username}} on {{format_date created_at}}
+  <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+</div>
+</article>
